@@ -4,7 +4,7 @@
 #include <ctime>
 #include <cstring>
 
-int main(int argc, char **argv)
+int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int cmdShow)
 {
 	char output[64];
 	size_t len;
