@@ -25,9 +25,9 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int 
 		}
 	}
 	if (shortname != progname) {
-		snprintf(output, sizeof(output), "%09llx-%s", epoch, shortname);
+		snprintf(output, sizeof(output), "%09llX%s", epoch, shortname);
 	} else {
-		snprintf(output, sizeof(output), "%09llx", epoch);
+		snprintf(output, sizeof(output), "%09llX", epoch);
 	}
 
 	len = strlen(output) + 1;
